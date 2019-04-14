@@ -106,6 +106,8 @@ fprintf('\n');
 % not need to be normalized.
 price = 0; % You should change this
 
+P = [1 (([1650 3] - mu) ./ sigma)];
+price = P*theta
 
 % ============================================================
 
@@ -151,6 +153,7 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 price = 0; % You should change this
 
+price = [1,1650,3] * theta;
 
 % ============================================================
 
