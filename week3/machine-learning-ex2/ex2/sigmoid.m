@@ -3,6 +3,7 @@ function g = sigmoid(z)
 %   g = SIGMOID(z) computes the sigmoid of z.
 
 % You need to return the following variables correctly 
+
 g = zeros(size(z));
 
 % ====================== YOUR CODE HERE ======================
@@ -10,7 +11,7 @@ g = zeros(size(z));
 %               vector or scalar).
 
 
-
+g = 1.0 ./ (1.0 + exp(-z));
 
 
 % =============================================================
